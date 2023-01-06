@@ -1,3 +1,7 @@
+body {
+  background-image: url("sky.jpg");
+  background-repeat: no-repeat;
+}
 h1 {
   font-family: "Fasthand", cursive;
   color: #6d6e71;
@@ -24,8 +28,6 @@ li {
   border-radius: 10px;
   height: 500px;
   box-sizing: border-box;
-  background-image: url("sky.jpg");
-  background-repeat: no-repeat;
 }
 .temperature-info {
   margin-top: 30px;
