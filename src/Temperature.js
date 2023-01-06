@@ -1,4 +1,5 @@
 import React from "react";
+import Forecast from "./Forecast";
 
 export default function Temperature() {
   return (
@@ -14,6 +15,7 @@ export default function Temperature() {
           °C{" "}
         </span>
       </div>
+      <Forecast />
     </div>
   );
 }
