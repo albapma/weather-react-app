@@ -4,7 +4,7 @@ import axios from "axios";
 
 export default function Temperature() {
   const [ready, setReady] = useState({ ready: false });
-  const [weather, weatherData] = useState({});
+  const [weather, setWeatherData] = useState({});
   function handleResponse(response) {
     setWeatherData({
       ready: true,
@@ -16,7 +16,6 @@ export default function Temperature() {
       date: "Wednesday 07:00",
       humidity: response.data.main.humidity,
     });
-    setTemperature(response.data.main.temp);
   }
   if (weatherData.ready) {
     return (
