@@ -1,7 +1,6 @@
 import "./App.css";
 import City from "./City";
 import Temperature from "./Temperature";
-import axios from "axios";
 
 export default function App() {
   return (
@@ -26,19 +25,17 @@ export default function App() {
       <div className="row">
         <div className="col-6">
           <ul>
-            <li id="date">{weatherData.date}</li>
-            <li className="text-capitalize" id="weather-description">
-              {weatherData.description}
-            </li>
+            <li id="date"></li>
+            <li className="text-capitalize" id="weather-description"></li>
           </ul>
         </div>
         <div className="col-6">
           <ul>
             <li>
-              Wind:{weatherData.wind}km/h <span id="wind"></span> km/h
+              Wind: km/h <span id="wind"></span> km/h
             </li>
             <li>
-              Humidity:{weatherData.humidity}% <span id="humidity"></span> %
+              Humidity: % <span id="humidity"></span> %
             </li>
           </ul>
         </div>

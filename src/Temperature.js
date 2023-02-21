@@ -3,8 +3,7 @@ import Forecast from "./Forecast";
 import axios from "axios";
 
 export default function Temperature() {
-  const [ready, setReady] = useState({ ready: false });
-  const [weather, setWeatherData] = useState({});
+  const [weatherData, setWeatherData] = useState({});
   function handleResponse(response) {
     setWeatherData({
       ready: true,
