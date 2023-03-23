@@ -2,16 +2,16 @@ import React, { useState } from "react";
 import Forecast from "./Forecast";
 import axios from "axios";
 
-export default function Temperature() {
+export default function Temperature(props) {
   const [weatherData, setWeatherData] = useState({});
   function handleResponse(response) {
     setWeatherData({
       ready: true,
-      temperature: response.data.main.temp,
+      temperature: { props, value },
       wind: response.data.wind.speed,
       description: response.data.weather[0].description,
       iconUrl: "http://openweathermap.org/img/wn/10d@2x.png",
-      city: response.data.name,
+      city: { props, place },
       date: "Wednesday 07:00",
       humidity: response.data.main.humidity,
     });

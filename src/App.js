@@ -20,7 +20,7 @@ export default function App() {
         </button>
       </div>
 
-      <City />
+      <City place={response.data.name} />
 
       <div className="row">
         <div className="col-6">
@@ -40,7 +40,7 @@ export default function App() {
           </ul>
         </div>
       </div>
-      <Temperature />
+      <Temperature value={response.data.main.temp} />
     </div>
   );
 }
