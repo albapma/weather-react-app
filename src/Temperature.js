@@ -7,11 +7,11 @@ export default function Temperature(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
-      temperature: { props.value },
+      temperature: props.value,
       wind: response.data.wind.speed,
       description: response.data.weather[0].description,
       iconUrl: "http://openweathermap.org/img/wn/10d@2x.png",
-      city: { props.place },
+      city: props.place,
       date: "Wednesday 07:00",
       humidity: response.data.main.humidity,
     });
